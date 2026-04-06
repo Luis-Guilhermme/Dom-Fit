@@ -49,3 +49,26 @@ header h1 {
 .section1 {
 margin: 2rem 0;
 }
+
+.section1 h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* estilizando os cards da aside section2 */
+
+.section2 .cards-container {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.cards {
+    margin: 2rem 0;
+    background-color: #6b0103;
+    width: 9rem;
+    height: 7rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
