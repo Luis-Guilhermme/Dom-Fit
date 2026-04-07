@@ -21,14 +21,16 @@
 
 /* estilizando o aside */
 
+.layout {
+    display: flex;
+}
+
 aside {
     background: linear-gradient(180deg, var(--color5), var(--color4));
-    width: 35%;
     height: 100vh;
     color: var(--color6);
     padding: 2rem;
-    min-width: 40px;
-    position: sticky;
+    min-width: 35%;
     top: 0;
     left: 0;
 }
@@ -46,7 +48,7 @@ header {
     gap: 1rem;
 }
 
-header img {
+.logo {
     width: 40px;
 }
 
@@ -162,4 +164,11 @@ div img {
 .div-list a:hover {
     color: #f03c02;
     text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    .layout {
+        flex-direction: column;
+    }
+    
 }
