@@ -104,7 +104,6 @@ margin: 2rem 0;
     min-width: 100px;
 }
 
-<<<<<<< HEAD
 /*Estilizando section 3*/
 .section-03 p {
     text-align: center;
@@ -122,7 +121,7 @@ div img {
 
 .div-link {
     display: flex;
-    justify-content: space-evenly;
+    gap: 16px;
     list-style: none;
 }
 
@@ -132,45 +131,9 @@ div a {
     color: #1c0113;
 }
 
-
-
-=======
-.fa-solid {
-    font-size: 2rem;
-    color: var(--color6);
-    text-align: center;
-    margin: 0 0 1rem 0;
+div a:hover {
+    color: #f03c02;
 }
 
-.section2 nav ul {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
 
-.section2 nav ul li,a {
-    list-style: none;
-    text-decoration: none;
-    color: #eeeeee5c;
-    cursor: pointer;
-    transition: 0.3s;
-}
 
-.section2 nav ul li a:hover {
-    color: #eee;
-}
-
-/* Trabalhando a responsividade */
-
-@media (max-width: 835px) {
-    aside {
-        width: 100%;
-        height: auto;
-        position: absolute;
-    }   
-
-    .cards {
-        min-width: 200px;
-    }
-}
->>>>>>> 436f28facea13dcfcbc777d30f0426b90bfeb97f
