@@ -9,6 +9,8 @@
     --color6: #eee;
 }
 
+/* Estilização global */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +18,18 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* estilizando o aside */
+
 aside {
     background: linear-gradient(180deg, var(--color5), var(--color4));
     width: 35%;
     height: 100vh;
     color: var(--color6);
     padding: 2rem;
+    min-width: 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header {
@@ -46,12 +54,29 @@ header h1 {
     font-weight: bold;
 }
 
+header button {
+    background-color: transparent;
+    border: 2px solid var(--color6);
+    color: var(--color6);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: var(--color6);
+    color: var(--color5);
+}
+
+/* estilizando a primeira seção */
+
 .section1 {
 margin: 2rem 0;
 }
 
 .section1 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -59,16 +84,61 @@ margin: 2rem 0;
 
 .section2 .cards-container {
     display: flex;
+    justify-content: center;
     gap: 1rem;
-
+    flex-wrap: wrap;
 }
 
 .cards {
-    margin: 2rem 0;
+    width: 30%;
+    margin: 1rem 0;
     background-color: #6b0103;
-    width: 9rem;
-    height: 7rem;
+    height: 10rem;
     padding: 1rem;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 100px;
 }
 
+.fa-solid {
+    font-size: 2rem;
+    color: var(--color6);
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.section2 nav ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.section2 nav ul li,a {
+    list-style: none;
+    text-decoration: none;
+    color: #eeeeee5c;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section2 nav ul li a:hover {
+    color: #eee;
+}
+
+/* Trabalhando a responsividade */
+
+@media (max-width: 835px) {
+    aside {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }   
+
+    .cards {
+        min-width: 200px;
+    }
+}
