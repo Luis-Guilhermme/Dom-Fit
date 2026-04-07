@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    list-style: none;
 }
 
 /* estilizando o aside */
@@ -122,17 +123,18 @@ div img {
 .div-link {
     display: flex;
     gap: 16px;
-    list-style: none;
 }
 
 div a {
     text-decoration: none;
     font-family: roboto;
     color: #1c0113;
+    font-weight: 800;
 }
 
 div a:hover {
     color: #f03c02;
+    text-decoration: underline;
 }
 
 
