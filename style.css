@@ -72,3 +72,32 @@ margin: 2rem 0;
     border-radius: 20px;
 }
 
+/*Estilizando section 3*/
+.section-03 p {
+    text-align: center;
+    margin: 5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+div img {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.div-link {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+div a {
+    text-decoration: none;
+    font-family: roboto;
+    color: #1c0113;
+}
+
+
+
