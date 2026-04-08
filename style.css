@@ -162,7 +162,7 @@ div img {
 }
 
 .div-list a:hover {
-    color: #f03c02;
+    color: #f00202;
     text-decoration: underline;
 }
 
@@ -171,4 +171,27 @@ div img {
         flex-direction: column;
     }
     
+}
+.rodape {
+    background-color: #ea804c;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.social-midia {
+  padding: 1.5rem; /* */
+}
+
+.social-media i {
+  color: black; /* */
+  font-size: 2rem; /* *32px */
+  margin: 0.5rem; /* espaçamento em volta do ícon*/
+}
 }
