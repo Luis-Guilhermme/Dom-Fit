@@ -26,11 +26,13 @@
 }
 
 aside {
+    width: 35%;
     background: linear-gradient(180deg, var(--color5), var(--color4));
     height: 100vh;
     color: var(--color6);
     padding: 2rem;
     min-width: 35%;
+    position: sticky;
     top: 0;
     left: 0;
 }
@@ -70,6 +72,7 @@ header button {
 header button:hover {
     background-color: var(--color6);
     color: var(--color5);
+    transform: scale(0.90);
 }
 
 /* estilizando a primeira seção */
@@ -84,8 +87,7 @@ header button:hover {
 }
 
 /* estilizando os cards da aside section2 */
-
-.section2 .cards-container {
+.cards-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -107,11 +109,28 @@ header button:hover {
     min-width: 100px;
 }
 
+/* estilizando nav da section2 */
+.section2 nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.section2 nav ul li a {
+    text-decoration: none;
+    color: #eeeeee81;
+}
+
+.section2 a:hover {
+    color: #eee;
+}
+
 /*Estilizando section 3*/
 .section-03 {
     background: #1C0113;
-    background: linear-gradient(219deg, rgba(28, 1, 19, 1) 0%, rgba(238, 238, 238, 1) 100%, rgba(0, 0, 0, 1) 100%);display: flex;
-    justify-content: right;
+    background: linear-gradient(219deg, rgba(28, 1, 19, 1) 0%, rgba(238, 238, 238, 1) 100%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 2rem;
     /*32px*/
     text-align: center;
@@ -122,19 +141,22 @@ header button:hover {
 
 .section-03 p {
     text-align: center;
-    color: #eee;
-    margin: 5rem;
+    color: #1C0113;
+    margin: 2rem;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-div img {
+img {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
     border-radius: 10px;
 }
+
 
 .content {
     display: flex;
@@ -145,19 +167,22 @@ div img {
     /*alinhamento vertical*/
     flex-wrap: wrap;
     /*quebra de caixas*/
-    gap: 6rem;
+    gap: 5rem;
     /*espaçamento entre caixas*/
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.div-list ul li {
+.div-list ul {
    margin-bottom: 0.5rem;
+   flex-direction: row;
+   display: flex;
+   gap: 5rem;
 }
 
 .div-list a {
     text-decoration: none;
     font-family: roboto;
-    color:#eee;
+    color:#1C0113;
     font-weight: 800;
 }
 
@@ -166,11 +191,46 @@ div img {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+/* estilizando a section4 */
+
+.section4 {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.div1-section4 {
+    width: 70%;
+}
+
+.div-section4 {
+    width: 22rem;
+    height: 15rem;
+}
+
+.section5 {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 835px) {
+
+    aside {
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
     .layout {
         flex-direction: column;
     }
     
+    .cards {
+        min-width: 200px;
+    }
 }
 .rodape {
     background-color: #ea804c;
