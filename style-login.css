@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color1: #1c0113;
+  --color2: #6b0103;
+  --color3: #a30006;
+  --color4: #c21a01;
+  --color5: #f03c02;
+  --color6: #eee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #c0c0c0;
+}
+
+aside {
+    width: 35%;
+    background: linear-gradient(180deg, var(--color5), var(--color4));
+    color: var(--color6);
+    padding: 2rem;
+    border-radius: 40px 0 0 40px; 
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside p {
+    margin: 1rem 0;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid var(--color5);
+  color: var(--color5);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color5);
+  color: var(--color6);
+  transform: scale(0.9);
+}
+
+.div-form {
+    padding: 2rem;
+    background-color: #eee;
+    border-radius: 0 40px 40px 0; 
+}
+
+.div-form h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.div-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-tel {
+    flex-direction: row;
+}
+
+input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    border: none;
+}
+
+.input-number {
+    width: 78%;
+}
+
+select {
+    width: 20%;
+    height: 3rem;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    border: none;   
+}
+
+@media (max-width: 835px) {
+  aside {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .div-form {
+    
+    border-radius: 0px 0px 40px 40px; 
+}
+
+}
