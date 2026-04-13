@@ -55,6 +55,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 
 .div-logo {
@@ -64,13 +65,9 @@ header {
 }
 
 .logo {
-  width: 40px;
+  width: 10rem;
 }
 
-header h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .button,
 .button2 {
@@ -294,7 +291,7 @@ img {
 }
 
 .div-section {
-  width: 22rem;
+  width: 48%;
   height: 15rem;
 }
 
@@ -389,5 +386,17 @@ hr {
 
   .nav-top ul {
     justify-content: space-between;
+  }
+ 
+  .div-section {
+  width: 99%;
+  height: 15rem;
+}
+
+}
+
+@media (max-width: 320px) {
+  header{
+    flex-wrap: wrap;
   }
 }
