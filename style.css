@@ -384,8 +384,9 @@ hr {
     flex-direction: column;
   }
 
-  .nav-top ul {
-    justify-content: space-between;
+  .section-nav {
+    visibility: hidden;
+    padding: 0;
   }
  
   .div-section {
