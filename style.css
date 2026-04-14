@@ -321,14 +321,18 @@ footer {
   background-color: #222;
   padding: 2rem;
   color: #eee;
-  text-align: center;
   font-size: 1.1rem;
+}
+
+.logo-footer{
+  width: 8rem;
+  margin: 0 0 2rem 0;
 }
 
 .div1-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 3rem;
   flex-wrap: wrap;
 }
@@ -352,6 +356,11 @@ hr {
   color: var(--color5);
 }
 
+.div2-footer{
+  text-align: center;
+}
+
+
 .div2-footer i {
   color: #eeeeee92;
   font-size: 2rem;
@@ -361,7 +370,7 @@ hr {
   color: var(--color5);
 }
 
-@media (max-width: 835px) {
+@media (max-width: 885px) {
   aside {
     height: 100%;
     position: relative;
@@ -370,6 +379,7 @@ hr {
 
   aside nav ul {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .layout {
@@ -392,6 +402,10 @@ hr {
   .div-section {
   width: 99%;
   height: 15rem;
+}
+
+footer{
+  text-align: center;
 }
 
 }
