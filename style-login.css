@@ -44,9 +44,9 @@ aside {
     box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.737);
 }
 
-    aside p {
+aside p {
         margin: 1rem 0;
-    }
+}
 
 .button {
   background-color: transparent;
