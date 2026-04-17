@@ -26,19 +26,20 @@
           
           <div class="div-campo">
             <label for="">Nome</label>
-            <input type="text" placeholder="Insira seu nome completo"/>
+            <input type="text" placeholder="Insira seu nome completo" required/>
           </div>
           
           <div class="div-campo">
             <label for="">E-mail</label>
-            <input type="email" placeholder="Insira seu email"/>
+            <input type="email" placeholder="Insira seu email" required/>
           </div>
       
           <div class="div-campo">
             <label for="">Telefone:</label>
             <div class="div-tel">
               <!-- DDD -->
-                <select name="" id="">
+                <select name="" id="" required>
+                  <option value=""></option>
                   <option value="11">11</option>
                   <option value="21">21</option>
                   <option value="51">51</option>
@@ -49,23 +50,24 @@
                   <option value="96">96</option>
                 </select>
                 <!-- Telefone -->
-              <input class="input-number" type="number" placeholder="99999-9999" />
+              <input class="input-number" type="number" placeholder="99999-9999" required/>
             </div>
           </div>
           
           <div class="div-campo">
             <label for="">Senha:</label>
-            <input type="password" placeholder="Crie uma senha" />
+            <input type="password" placeholder="Crie uma senha" required/>
           </div>
          
-          <input class="button" type="submit" value=" Finalize sua inscrção" />
+          <input class="button" type="submit" value=" Finalize seu cadastro" />
           <input class="button" type="reset" value="Limpar formulario" />
         </form>
 
-        <button class="btn-google">
-          <img src="img/logo-google.png" alt="logo-google" class="logo-google">
-          Entre com o Google
-        </button>
+        <div class="link">
+          <a href="">
+            <p>Já tenho conta</p>
+          </a>
+        </div>
       </div>
     </div>
   </body>
