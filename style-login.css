@@ -116,13 +116,34 @@ select {
     border: none;
 }
 
+.btn-google{
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    border: 2px solid #989898;
+    color: #222;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+  transform: scale(0.9);
+
+}
+
 
 .logo-google{
     width: 1rem;
 }
 
 .link {
-    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 1rem;   
 }
 
