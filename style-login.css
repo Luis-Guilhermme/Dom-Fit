@@ -41,10 +41,11 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 20px 20px 20px -10px rgba(0, 0, 0, 0.737);
 }
 
 aside p {
-    margin: 1rem 0;
+        margin: 1rem 0;
 }
 
 .button {
@@ -66,7 +67,8 @@ aside p {
 .div-form {
     padding: 2rem;
     background-color: #eee;
-    border-radius: 0 40px 40px 0; 
+    border-radius: 0 40px 40px 0;     
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.737);
 }
 
 .div-form h2{
@@ -102,13 +104,32 @@ select {
     border-radius: 20px;
     padding: 1rem;
     margin: 0.5rem auto;
-<<<<<<< HEAD
     border: none;   
     background-color: white;
-=======
-    border: none;
-    background-color:white;  
->>>>>>> 7f5a0ed7d95b54bfbeb60405397583aced5a9e77
+}
+
+.btn-google{
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    border: 2px solid #989898;
+    color: #222;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-google:hover {
+  transform: scale(0.9);
+
+}
+
+
+.logo-google{
+    width: 1rem;
 }
 
 @media (max-width: 835px) {
@@ -116,6 +137,7 @@ select {
     height: 100%;
     width: 100%;
     border-radius: 40px 40px 0px 0px;
+    box-shadow: none;
   }
 
   .layout {
